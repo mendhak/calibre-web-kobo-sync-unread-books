@@ -8,3 +8,8 @@ Assumptions:
 
 * In Calibre Web (app.db), the Kobo Shelf ID is `1``.   
 * In Calibre DB (metadata.db), the Read column is in the table `custom_column_1`  
+
+
+Worth considering: 
+
+* The Calibre Web db has its own read_status column in the book_read_link. Could combine that, and not add to the Kobo shelf if the book is marked read in Calibre Web. 
